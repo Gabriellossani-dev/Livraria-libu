@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,31 +18,118 @@ quando fizer mudanças no codigo -->
                 Geralmente é o menu ou links para outras páginas.-->
             <h1>Livaria Libu</h1>
             <p>Onde ler é sempre Bem Vindo</p>
-            <button>
-                <a href="">Biblioteca</a>
-            </button>
-            <button>
-                <a href="">Leitura</a>
-            </button>
-            <button>
-                <a href="">Carrinho</a>
-            </button>
-            <button>
-                <a href="">Sobre</a>
-            </button>
+            <a href="#Biblioteca">Biblioteca</a>
+            <a href="#Sobre">Sobre</a>
+            <a href="#Livros">Livros</a>
+            <a href="#Contato">Contato</a>
+            
          </nav>
 
-    <main></main><!--Define o conteúdo principal da página (o foco do conteúdo).
-                    html
-                    Copiar
-                    Editar
-                    -->
-    <section></section><!--Agrupa conteúdos relacionados.
-                        Pode ser usada várias vezes dentro do <main>.-->
-    <article></article><!--Para conteúdos independentes, como um post, livro ou história.-->
-    <aside></aside><!--Conteúdo secundário ou complementar (como propagandas, links extras).-->
-    <footer></footer><!--Ródapé da pagina-->
+    <main>
+        <section> <!--Essa section abriga o carrossel-->
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="imgs/baixados.webp" alt="Imagem 1">
+                    <img src="imgs/baixados (1).webp" alt="Imagem 2">
+                    <img src="imgs/OIP.webp" alt="Imagem 3">
+                    <img src="imgs/OIP (1).webp" alt="Imagem 4">
+                </div>
 
+             <button class="prev">⟨</button>
+             <button class="next">⟩</button>
+   
+            </div>
+        </section>
+
+        <section class="librarie">
+            <div class="biblioteca">
+                <div class="livros">
+                    <div class="livro">
+                        <img src="" alt="livro1">
+                        <p>livro 1</p>
+                    <a href="#produto1">Compre agora!</a>
+
+                    <div class="livro">
+                        <img src="" alt="livro2">
+                        <p>livro 2</p>
+                    <a href="#produto2">Compre agora!</a>
+
+                    <div class="livro">
+                        <img src="" alt="livro3">
+                        <p>livro 3</p>
+                    <a href="#produto3">Compre agora!</a>
+
+                    <div class="livro">
+                        <img src="" alt="livro4">
+                        <p>livro 4</p>
+                    <a href="#produto4">Compre agora!</a>
+
+                    <div class="livro">
+                        <img src="" alt="livro5">
+                        <p>livro 5</p>
+                    <a href="#produto5">Compre agora!</a>
+
+                    <div class="livro">
+                        <img src="" alt="livro6">
+                        <p>livro 6</p>
+                    <a href="#produto6">Compre agora!</a>
+
+                    <div class="livro">
+                        <img src="" alt="livro7">
+                        <p>livro 7</p>
+                    <a href="#produto7">Compre agora!</a>
+
+                    <div class="livro">
+                        <img src="" alt="livro8">
+                        <p>livro 8</p>
+                    <a href="#produto8">Compre agora!</a>
+
+                    <div class="livro">
+                        <img src="" alt="livro9">
+                        <p>livro 9</p>
+                    <a href="#produto9">Compre agora!</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="for">
+            <div class="sobre">
+                <div class="minsobre">
+                    <h1>Sobre</h1>
+                    <p>No começo o site era para ser um site<br>
+                    somente de vendas de Livros como varios outros<br>
+                Porem<br>
+            eu pensei comigo porque não, fazer algo diferente,<br>
+        Algo que todos possam usar, Amantes de livros, univesitarios, estudantes,<br>
+    professores, crianças, o Meu site é focado para todos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cont">
+            <div class="contato>">
+                <h3>Entre em contato comigo!</h3>
+                <input type="text">
+                <input type="email">
+                <input type="number">
+                <input type="submit">
+            </div>
+        </section>
+    </main><!--Define o conteúdo principal da página (o foco do conteúdo).-->
+    <footer>
+        <h3>Gabriel Lossani Da Silva</h3>
+        <p>Desenvolvedor Fullstack</p>
+        <img src="" alt="whatsapp">
+        <p>(11) 94244-7141 - Somente whatsapp</p>
+        <img src="" alt="instagram">
+        <p>GabrielLoss_Dev</p>
+        <img src="" alt="github">
+        <p>Gabriellossani-dev</p>
+    </footer><!--Ródapé da pagina-->
+
+    <script src="script.js"></script>
     
 </body>
 </html>

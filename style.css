@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-track {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* altura do carrossel */
+}
+
+.carousel-track img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.7);
+  transition: all 0.5s ease;
+  width: 60%;
+}
+
+/* imagem principal */
+.carousel-track img.active {
+  opacity: 1;
+  z-index: 3;
+  transform: translate(-50%, -50%) scale(1);
+  width: 80%;
+}
+
+/* imagem anterior */
+/* imagem anterior */
+.carousel-track img.prev {
+  opacity: 0.7;
+  z-index: 2;
+  transform: translate(-50%, -50%) scale(0.6); /* estava -150% */
+}
+
+/* imagem próxima */
+.carousel-track img.next {
+  opacity: 0.7;
+  z-index: 2;
+  transform: translate(50%, -50%) scale(0.6);
+}
+
+
+/* Botões */
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.carousel .prev { left: 10px; }
+.carousel .next { right: 10px; }
+
